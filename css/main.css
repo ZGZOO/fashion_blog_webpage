@@ -1,0 +1,213 @@
+/* * {
+  border: 1px solid gold;
+} */
+
+body {
+  font-family: Lato;
+  margin: 70px 120px 20px 120px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1260px 30px;
+}
+
+header > h1,
+h3 {
+  display: inline;
+  font-weight: 300;
+}
+
+header h1 {
+  color: #df1800;
+  font-size: 40px;
+}
+
+header h3 {
+  color: #94908f;
+  margin-left: 6px;
+}
+
+.headernav {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.headernav > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+  margin-right: 1px;
+}
+
+#aboutlink {
+  margin-right: 0;
+}
+
+main {
+  display: grid;
+  width: 1080px;
+  grid-template-columns: 720px 320px;
+  gap: 40px;
+}
+
+.blogdiv {
+  grid-column: 1 / 2;
+}
+
+.sidediv {
+  grid-column: 2 / 3;
+}
+
+.blog {
+  border-bottom: 1px solid #dddddd;
+  padding: 40px 0 20px 0;
+}
+
+.blog > h2,
+p {
+  font-weight: 300;
+}
+
+.blog > h2 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.date {
+  color: #cccccc;
+}
+
+.picdiv {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+#blog1picdiv {
+  background-image: url(../img/fashion_photo.jpg);
+}
+
+#blog2picdiv {
+  background-image: url(../img/fashion_photo2.jpg);
+}
+
+/* found this trick to do drop caps of a para in this site: https://css-tricks.com/snippets/css/drop-caps/ */
+.blog > p:first-letter {
+  color: #dddddd;
+  float: left;
+  font-size: 70px;
+  line-height: 50px;
+}
+
+.blog > p {
+  color: #43445d;
+}
+
+.clicklink {
+  text-decoration: none;
+  color: #df1800;
+  font-weight: 700;
+}
+
+/* move the links to the right of the div */
+.clickdiv {
+  height: 28px;
+  position: relative;
+}
+
+.clicklink {
+  position: absolute;
+  right: 0;
+}
+
+.sidedivs {
+  /* border: 3px solid purple; */
+  margin-top: 25px;
+  border-bottom: 1px solid #dddddd;
+}
+
+#popularposts {
+  border-bottom: none;
+}
+
+.sidedivs > h4 {
+  color: #88888e;
+}
+
+#aboutus {
+  color: #8d8d8a;
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+#clickdiv3 {
+  margin: 10px 0;
+}
+
+#ad {
+  margin-top: 0;
+}
+
+.adpic {
+  margin: 20px;
+}
+
+.adpic {
+  height: 300px;
+  background-image: url(../img/ad.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+#popularposts {
+  color: #e11a42;
+  font-weight: 300;
+}
+
+/* learned this trick of changing only the color of point of the ul from this site: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color */
+#popularposts > ul {
+  list-style: none;
+}
+
+#popularposts > ul li::before {
+  content: "\2022";
+  color: #888888;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+footer {
+  position: relative;
+}
+
+.footerdiv {
+  position: absolute;
+  bottom: 0;
+  /* border: 3px solid brown; */
+  margin-bottom: 0;
+}
+
+.footerdiv > a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 300;
+  color: #e11a42;
+  padding: 0 5px;
+  margin: auto 0;
+  line-height: 14px;
+  border-right: 1px solid #dddddd;
+}
+
+#tips {
+  border-right: none;
+}
